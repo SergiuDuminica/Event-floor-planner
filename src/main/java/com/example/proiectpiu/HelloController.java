@@ -251,7 +251,7 @@ public class HelloController implements Initializable {
     }
 
     @FXML
-    protected void onSaveButtonClick(javafx.event.ActionEvent event) throws IOException {
+    protected void onSaveButtonClick() throws IOException {
         WritableImage image = anchorPane.snapshot(new SnapshotParameters(), null);
 
         FileChooser stegoImageSaver = new FileChooser();
