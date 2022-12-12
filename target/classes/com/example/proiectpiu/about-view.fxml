@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="568.0" style="-fx-background-color: #3d4956;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.proiectpiu.HelloController">
+   <children>
+      <BorderPane prefHeight="6.0" prefWidth="394.0" style="-fx-background-color: #ffffffff;" />
+      <AnchorPane prefHeight="0.0" prefWidth="394.0" />
+      <Label layoutX="10.0" layoutY="28.0" text="Specializarea Tehnologia Informatiei" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+         <graphic>
+            <Label text="Universitatea Tehnica Gheorghe Asachi din Iasi" textFill="WHITE">
+               <font>
+                  <Font name="Inter Regular" size="12.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Label>
+      <Label layoutX="10.0" layoutY="10.0" text="Facultatea de Automatica si Calculatoare" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="45.0" text="Materie: Proiectarea Interfetelor Utilizator" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="63.0" text="Anul IV" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="80.0" text="grupa 1409A" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="98.0" text="Proiect realizat de: Duminica Ionel-Sergiu, Blanaru Ioana-Bianca" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Inter Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="116.0" text="Profesor coordonator: Ș.l.dr.ing. Marius Gavrilescu" textFill="WHITE">
+         <VBox.margin>
+            <Insets left="5.0" />
+         </VBox.margin>
+      </Label>
+      <BorderPane prefHeight="6.0" prefWidth="394.0" style="-fx-background-color: #ffffffff;" />
+   </children>
+</VBox>
