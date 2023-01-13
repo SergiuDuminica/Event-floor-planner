@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectpiu.LoginController">
+    <children>
+        <AnchorPane prefHeight="730.0" prefWidth="1326.0" style="-fx-background-color: #3d4956;">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="403.0" layoutY="89.0" text="WELCOME" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Bold" size="96.0" />
+                    </font>
+                </Label>
+                <TextArea id="usernameField" fx:id="username" layoutX="69.0" layoutY="369.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-radius: 5;">
+               <font>
+                  <Font name="Inter Regular" size="12.0" />
+               </font></TextArea>
+                <TextArea id="passwordField" fx:id="password" layoutX="69.0" layoutY="445.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-radius: 5;" />
+                <Button layoutX="211.0" layoutY="515.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="40.0" prefWidth="108.0" style="-fx-background-radius: 10;" text="LogIn" textFill="#3d4956">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                    <font>
+                        <Font name="Inter Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="76.0" layoutY="338.0" text="Name" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="76.0" layoutY="419.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="211.0" layoutY="266.0" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Italic" size="27.0" />
+                    </font>
+                </Label>
+                <TextArea id="newUsername" fx:id="newUsername" layoutX="867.0" layoutY="368.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-radius: 5;" />
+                <TextArea id="newPassword" fx:id="newPassword" layoutX="867.0" layoutY="444.0" prefHeight="40.0" prefWidth="392.0" style="-fx-background-radius: 5;" />
+                <Button layoutX="1009.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleRegistrationButtonAction" prefHeight="40.0" prefWidth="108.0" style="-fx-background-radius: 10;" text="Create" textFill="#3d4956">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                    <font>
+                        <Font name="Inter Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label layoutX="874.0" layoutY="337.0" text="Name" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="874.0" layoutY="418.0" text="Password" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Bold" size="17.0" />
+                    </font>
+                </Label>
+                <Label contentDisplay="CENTER" layoutX="916.0" layoutY="266.0" text="CREATE AN ACCOUNT" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Inter Italic" size="27.0" />
+                    </font>
+                </Label>
+                <TextFlow id="textFlow1" fx:id="textFlow1" layoutX="66.0" layoutY="613.0" prefHeight="62.0" prefWidth="408.0" />
+                <TextFlow id="textFlow2" fx:id="textFlow2" layoutX="874.0" layoutY="613.0" prefHeight="62.0" prefWidth="408.0" />
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

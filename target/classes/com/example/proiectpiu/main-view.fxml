@@ -3,100 +3,144 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3d4956;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectpiu.HelloController">
-   <children>
-      <MenuBar prefHeight="23.0" prefWidth="800.0" style="-fx-background-color: #ffffff;">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
-            </items>
-          </Menu>
-        </menus>
-         <cursor>
-            <Cursor fx:constant="SW_RESIZE" />
-         </cursor>
-      </MenuBar>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="41.0" prefHeight="61.0" prefWidth="800.0" style="-fx-background-color: #3d4956;" text="DESIGN YOUR OWN EVENT" textFill="WHITE">
-         <font>
-            <Font name="Inter Regular" size="36.0" />
-         </font>
-      </Label>
-      <MenuButton layoutX="28.0" layoutY="127.0" mnemonicParsing="false" text="Add square tables" AnchorPane.leftAnchor="28.0">
-        <items>
-          <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS2" text="Square table for 2" />
-          <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS4" text="Square table for 4" />
-            <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS6" text="Square table for 6" />
-            <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS8" text="Square table for 8" />
-            <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS10" text="Square table for 10" />
-            <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS12" text="Square table for 12" />
-        </items>
-         <font>
-            <Font name="Inter Regular" size="12.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </MenuButton>
-      <MenuButton layoutX="336.0" layoutY="127.0" mnemonicParsing="false" text="Add circle tables" AnchorPane.leftAnchor="336.0">
-        <items>
-          <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS6" text="Circle table for 6" />
-          <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS8" text="Circle table for 8" />
-            <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS10" text="Circle table for 10" />
-            <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS12" text="Circle table for 12" />
-        </items>
-         <font>
-            <Font name="Inter Regular" size="12.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </MenuButton>
-      <MenuButton layoutX="655.0" layoutY="127.0" mnemonicParsing="false" prefWidth="115.0" text="Add bar">
-        <items>
-          <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickBM" text="Big bar" />
-          <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickBmic" text="Small bar" />
-        </items>
-         <font>
-            <Font name="Inter Regular" size="12.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </MenuButton>
-      <Button layoutX="728.0" layoutY="560.0" mnemonicParsing="false" onAction="#onExitButtonClick" text="EXIT">
-         <font>
-            <Font name="Inter Regular" size="12.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </Button>
-      <Button layoutX="28.0" layoutY="560.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="BACK">
-         <font>
-            <Font name="Inter Regular" size="12.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect></Button>
-      <AnchorPane id="anchorPane" fx:id="anchorPane" layoutX="28.0" layoutY="161.0" prefHeight="392.0" prefWidth="743.0" style="-fx-background-color: #ffffff;" />
-      <Button layoutX="323.0" layoutY="560.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" text="DELETE LAST ELEMENT">
-         <font>
-            <Font name="Inter Regular" size="12.0" />
-         </font>
-         <effect>
-            <InnerShadow />
-         </effect>
-      </Button>
-<!--      <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="463.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true" />-->
-<!--      <ImageView fitHeight="39.0" fitWidth="42.0" layoutX="294.0" layoutY="530.0" pickOnBounds="true" preserveRatio="true" />-->
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1272.0" style="-fx-background-color: #3d4956; -fx-border-color: #0000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectpiu.HelloController">
+    <children>
+        <AnchorPane layoutX="56.0" layoutY="185.0" prefHeight="499.0" prefWidth="208.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 5;">
+            <children>
+                <MenuButton layoutX="36.0" layoutY="116.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="135.0" text=" Square Tables" AnchorPane.leftAnchor="36.0">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS2" text="Square table for 2" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS4" text="Square table for 4" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS6" text="Square table for 6" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS8" text="Square table for 8" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS10" text="Square table for 10" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickTS12" text="Square table for 12" />
+                    </items>
+                    <font>
+                        <Font name="Inter Regular" size="12.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </MenuButton>
+                <MenuButton layoutX="41.0" layoutY="272.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="135.0" text="Sofa">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickSofa1" text="Sofa 1" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickSofa2" text="Sofa 2" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickSofa3" text="Sofa 3" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickSofaCorner2" text="Corner Sofa 2" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickSofaCorner4" text="Corner Sofa 4" />
+                    </items>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </MenuButton>
+
+
+                <MenuButton layoutX="36.0" layoutY="169.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="135.0" text="Circle Tables" AnchorPane.leftAnchor="36.0">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS6" text="Circle table for 6" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS8" text="Circle table for 8" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS10" text="Circle table for 10" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickCS12" text="Circle table for 12" />
+                    </items>
+                    <font>
+                        <Font name="Inter Regular" size="12.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </MenuButton>
+                <MenuButton layoutX="41.0" layoutY="221.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="135.0" text="Bar">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickBM" text="Big bar" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickBmic" text="Small bar" />
+                    </items>
+                    <font>
+                        <Font name="Inter Regular" size="12.0" />
+                    </font>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </MenuButton>
+
+                <MenuButton layoutX="41.0" layoutY="322.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="135.0" text="Tables">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickRound" text="Round Table" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickRectangle" text="Rectangle Table" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickSquare" text="Square Table" />
+                        <MenuItem mnemonicParsing="false" onAction="#onAddButtonClickOval" text="Oval Table" />
+                    </items>
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </MenuButton>
+                <Button layoutX="41.0" layoutY="388.0" mnemonicParsing="false" onAction="#onAddButtonClickChair" prefHeight="42.0" prefWidth="135.0" text="Chair">
+                    <effect>
+                        <InnerShadow />
+                    </effect></Button>
+                <Label layoutX="75.0" layoutY="14.0" prefHeight="50.0" prefWidth="77.0" text="ADD" textFill="#3d4956">
+                    <font>
+                        <Font name="Inter Bold" size="32.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <MenuBar prefHeight="23.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onSaveButtonClick" text="Save" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+            <cursor>
+                <Cursor fx:constant="SW_RESIZE" />
+            </cursor>
+        </MenuBar>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="43.0" prefHeight="61.0" prefWidth="800.0" style="-fx-background-color: dropshadow(#3d4956);" text="DESIGN YOUR OWN EVENT" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Inter Regular" size="36.0" />
+            </font>
+        </Label>
+        <Button layoutX="1195.0" layoutY="37.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="13.0" prefWidth="60.0" text="Exit" style="-fx-background-color: #ffffff; " >
+            <font>
+                <Font name="Inter Regular" size="12.0" />
+            </font>
+
+
+        </Button>
+        <Button layoutX="27.0" layoutY="37.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="13.0" prefWidth="60.0" text="Back" style="-fx-background-color: #ffffff;" >
+            <font>
+                <Font name="Inter Regular" size="12.0" />
+            </font>
+
+        </Button>
+        <AnchorPane id="anchorPane" fx:id="anchorPane" layoutX="272.0" layoutY="185.0" prefHeight="499.0" prefWidth="974.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-width: 5;" />
+        <Button id="button" layoutX="360.0" layoutY="146.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" prefHeight="13.0" prefWidth="60.0" text="Delete" style="-fx-background-color: #ffffff;">
+            <font>
+                <Font name="Inter Regular" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+
+        </Button>
+        <Button layoutX="290.0" layoutY="146.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="13.0" prefWidth="52.0" text="Save" style="-fx-background-color: #ffffff;">
+            <font>
+                <Font name="Inter Regular" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+    </children>
 </AnchorPane>
